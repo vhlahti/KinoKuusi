@@ -50,3 +50,75 @@ footer img {
 }
 
 
+
+/* Ohjelmisto sectionin (id "program" CSS-säännöt alkaa */
+#programHeader {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-block-end: 1rem;
+}
+#weekHeader {
+    font-size: 1.5rem;
+    margin-inline-start: 1.5rem;
+    margin-block-end: 1.5rem;
+}
+#program {
+    padding: 2rem;
+    position: relative;
+}
+.movies {
+    display: flex;
+    flex-direction: row;
+    background-color: #fcfcfc;
+    border: solid 1px gray;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+.movies > * {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+.poster {
+    display: block;
+    border: white solid 3px;
+    margin-inline-end: 1rem;
+}
+img {
+    width: 100%;
+}
+.summary {
+    padding: 0 1rem 0 1rem
+}
+.movieName {
+    font-size: 1.6rem;
+    margin-block-end: 1rem;
+    font-weight: bold;
+}
+.movieInfo{
+    margin: 2rem 0 1rem 1rem;
+}
+td {
+    padding: 0 1rem 0 1rem;
+}
+.reservation {
+    text-align: center;
+    
+}
+.reservation p {
+    line-height: 1.5rem;
+}
+.showtime {
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    line-height: 1.8rem;
+}
+.tickets {
+    background-color: #b6e189;
+    font-weight: bold;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+/* Program sectionin CSS säännöt loppuu tähän */
