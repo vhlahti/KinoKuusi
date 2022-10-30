@@ -3,10 +3,68 @@ html {
 }
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 60px;
 }
+
+/* header/navigointi mobiili säännöt alkaa */
+
+header {
+    background-color: #B5E188;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+    box-sizing: border-box;
+}
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.navbar-links {
+    display: none;
+    width: 100%;
+}
+.navbar-links.active {
+    display: flex;
+    padding-bottom: 1rem;
+}
+.navbar-links ul {
+    width: 100%;
+}
+.navbar-links li {
+    text-align: center;
+}
+.navbar-links li a {
+    text-decoration: none;
+    padding: 1rem;
+    color: #1E591E;
+    font-size: 1.4rem;
+    display: block;
+}
+.navbar-links li:hover {
+    background-color: #D5DEDF;
+}
+.logo {
+    font-size: 2.4rem;
+    color: #1E591E;
+    padding: 2rem;
+}
+.toggle-button {
+    color: #1E591E;
+    text-decoration: none;
+    position: absolute;
+    top: 2.7rem;
+    right: 2rem;
+}
+
+/* header/navigointi mobiili säännöt loppuu */
+
+
+
+
 /*Footer alkaa!*/
 footer {
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -122,3 +180,35 @@ td {
     border-radius: 0.5rem;
 }
 /* Program sectionin CSS säännöt loppuu tähän */
+
+
+/* Tablet-näkymän css-säännöt. */
+@media only screen and (min-width: 426px) {
+
+    /* header/navigointi tablet/desktop säännöt alkaa */
+
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar-links {
+        margin: 1rem;
+        width: auto;
+    }
+    .navbar-links, .navbar-links ul, .navbar-links.active {
+        display: flex;
+    }
+    .toggle-button {
+        display: none;
+    }
+
+   /* header/navigointi tablet/desktop säännöt loppuu */
+
+}
+
+/* Desktop-näkymän css-säännöt. */
+@media only screen and (min-width: 769px) {
+    
+  
+}

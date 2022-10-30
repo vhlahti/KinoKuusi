@@ -4,52 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KinoKuusi</title>
+    <title>kinoKuusi</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/layout.css" />
-    <script src="./js/scripts.js"></script>
+    <script src="./js/scripts.js" defer></script>
     <script src="https://kit.fontawesome.com/5a9a3c0069.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
-    <footer>
-        <section id="footer">
-    <div>
-        <ul>
-            <h1>kinoKuusi</h1>
-            <li>Kuusikatu 6</li>
-            <li>66666 Kuusamo</li>
-            <br>
-            <li><a href="">Lähetä palautetta!</a></li>
-        </ul>
-    </div>
-
-    <div>
-        <ul>
-            <br><br><br>
-            <li>info@kinokuusi</li>
-            <li>040 666 6666</li>
-        </ul>
-    </div>
-
-    <div>
-        <ul>
-            <br><br><br>
-            <li><i class="fa-brands fa-facebook fa-2xl"></i></li>
-            <br>
-            <li><i class="fa-brands fa-twitter fa-2xl"></i></li>
-        </ul>
-    </div>
-
-    
-    </section>
-    <img src="./images/Europa-Cinemas-logo-footer-300x98.png" alt="">
-    </footer>
-</body>
-</html>
-  </head>
-  <body>
-
+  <header>
+    <nav class="navbar">
+        <figure class="logo"><p>kinoKuusi</p></figure>
+        <section>
+            <a href="#" class="toggle-button"><i class="fa-solid fa-bars fa-2xl"></i></a>
+        </section>
+        <section class="navbar-links">
+            <ul>
+            <li><a href="#">Ohjelmisto</a></li>
+            <li><a href="#">Liput ja hinnat</a></li>
+            <li><a href="#">Info</a></li>
+            <li><a href="#">Yhteystiedot</a></li>
+            </ul>
+        </section>
+    </nav>
+</header>
     <!--Ohjelmisto eli Program section alkaa tästä-->
     <section id="program">
       <h1 id="programHeader">Ohjelmisto</h1>
@@ -169,7 +146,36 @@
       </article>
     </section>
     <!--Ohjelmisto eli Program section loppuu tähän-->
+    <footer>
+      <section id="footer">
+  <div>
+      <ul>
+          <h1>kinoKuusi</h1>
+          <li>Kuusikatu 6</li>
+          <li>66666 Kuusamo</li>
+          <br>
+          <li><a href="">Lähetä palautetta!</a></li>
+      </ul>
+  </div>
 
+  <div>
+      <ul>
+          <br><br><br>
+          <li>info@kinokuusi</li>
+          <li>040 666 6666</li>
+      </ul>
+  </div>
 
+  <div>
+      <ul>
+          <br><br><br>
+          <li><i class="fa-brands fa-facebook fa-2xl"></i></li>
+          <br>
+          <li><i class="fa-brands fa-twitter fa-2xl"></i></li>
+      </ul>
+  </div>
+  </section>
+  <img src="./images/Europa-Cinemas-logo-footer-300x98.png" alt="">
+  </footer>
   </body>
 </html>
