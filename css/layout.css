@@ -70,52 +70,6 @@ header {
 
 
 
-/*Footer alkaa!*/
-footer {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #20591f;
-    color: white;
-    padding: 20px 0 30px;
-}
-
-footer h1 {
-    font-size: 20px;
-    color: #f6e7ca;
-    padding-bottom: 10px;
-}
-
-footer li {
-    font-size: 12px;
-    color: #f6e7ca;
-    line-height: 1.5;
-}
-
-footer a {
-    color: #f6e7ca;
-}
-
-footer img {
-    width: 100px;
-    margin: auto;
-    display: block;
-    padding-top: 20px;
-}
-
-#footer {
-    display: flex;
-    justify-content: space-evenly;
-    max-width: 350px;
-    margin: auto;
-}
-
-.fa-brands {
-    color: #f6e7ca
-}
-
-
-
 /* Ohjelmisto sectionin (id "program" CSS-säännöt alkaa */
 #programHeader {
     font-size: 2rem;
@@ -188,6 +142,83 @@ td {
 }
 /* Program sectionin CSS säännöt loppuu tähän */
 
+/*liput ja hinnat alkaa*/
+#ticket-price{
+    background-color: #fcfcfc;
+    padding: 1rem;
+    margin: 0.5rem;
+} 
+
+#ticket-price h3 {
+    font-size: 1.6rem;
+    margin-block-end: 1rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+#info {
+    background-color: #fcfcfc;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+#info h3 {
+    font-size: 1.6rem;
+    margin-block-end: 1rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+#bottom-pic {
+    margin-bottom: -1px;
+}
+
+/*info alkaa*/
+
+/*Footer alkaa*/
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-image: linear-gradient(#364f42, #20591f);
+    
+    color: white;
+    padding: 20px 0 30px;
+}
+
+footer h1 {
+    font-size: 20px;
+    color: #f6e7ca;
+    padding-bottom: 10px;
+}
+
+footer li {
+    font-size: 12px;
+    color: #f6e7ca;
+    line-height: 1.5;
+}
+
+footer a {
+    color: #f6e7ca;
+}
+
+footer img {
+    width: 100px;
+    margin: auto;
+    display: block;
+    padding-top: 20px;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 350px;
+    margin: auto;
+}
+
+.fa-brands {
+    color: #f6e7ca
+}
 
 /* Tablet-näkymän css-säännöt. */
 @media only screen and (min-width: 426px) {
@@ -212,10 +243,90 @@ td {
 
    /* header/navigointi tablet/desktop säännöt loppuu */
 
+   /*liput ja hinnat alkaa*/
+    
+    #main-bottom p {
+        padding: 10px;
+        font-size: 12px;
+        line-height: 1.3;
+    }
+
+    #main-bottom h3 {
+        padding-top: 10px;
+        font-size: 20px;
+    }
+    #main-bottom tr {
+        font-size: 12px;
+        line-height: 1.3;
+        }
+
+    #ticket-price img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;    
+    }
+    #info img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;    
+    }
 }
 
 /* Desktop-näkymän css-säännöt. */
 @media only screen and (min-width: 769px) {
     
+    /*liput ja hinnat alkaa*/
+    #main-bottom {
+        max-width: 1500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #main-bottom h3 {
+        font-size: 25px;
+        padding: 0 0 10px;
+        margin: 0;
+    }
+
+    #main-bottom p {
+        font-size: 14px;
+    }
+    #main-bottom tr {
+        font-size: 14px;
+    }
+
+    #box {
+        margin: 25px 0;
+    }
+    
+    #ticket-price img {
+        width: 45%;    
+        float: right;
+        padding: 25px 0;
+        margin-left: 25px;
+    }
+    #info img {
+        width: 45%;    
+        float: left;
+        padding: 25px 0; 
+        margin-right: 25px;  
+    }
+    #ticket-price {
+        overflow: auto;
+        padding: 0;
+    }
+    #info {
+        overflow: auto;
+    }
+    #bottom-pic {
+        display: none;
+    }
+
+    footer {
+        background: none #20591f;
+        padding: 50px 0;
+    }
   
 }
+
+
+
