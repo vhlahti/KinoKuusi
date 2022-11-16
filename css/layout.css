@@ -249,12 +249,12 @@ td {
 /* Program sectionin CSS säännöt loppuu tähän */
 
 /*liput ja hinnat alkaa*/
+
 #ticket-price{
     background-color: rgb(245, 239, 239, 0.8);
     border: solid 1px gray;
     border-radius: 1rem;
-    padding: 1rem;
-    margin: 0.5rem;
+    margin: 0 2.5rem;
     margin-bottom: 1rem;
 } 
 
@@ -262,15 +262,21 @@ td {
     font-size: 1.6rem;
     margin-block-end: 1rem;
     font-weight: bold;
-    margin: 10px 0;
+}
+
+#ticket-price p {
+    line-height: 1.5;
+}
+
+#ticket-price img {
+    border-radius: 10px 10px 0 0;
 }
 
 #info {
     background-color: rgb(245, 239, 239, 0.8);
     border: solid 1px gray;
     border-radius: 1rem;
-    padding: 1rem;
-    margin: 0.5rem;
+    margin: 1rem 2.5rem;
     margin-bottom: 1rem;
 }
 
@@ -278,7 +284,18 @@ td {
     font-size: 1.6rem;
     margin-block-end: 1rem;
     font-weight: bold;
-    margin: 10px 0;
+    margin: 10px;
+}
+
+#info p {
+    line-height: 1.5;
+}
+#info img {
+    border-radius: 10px 10px 0 0;
+}
+
+#box {
+    padding: 10px;
 }
 
 #bottom-pic {
@@ -286,11 +303,16 @@ td {
 }
 .prices {
     background-color: rgb(246, 231, 202, 0.7);
+    border: none;
+    border-radius: 5px;
+    border-collapse: separate; 
+    margin-left: auto;
+    margin-right: auto;
+    padding:5px 15px;
 }
 .prices, .prices tr, .prices td {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 2.4rem;
-    border: solid forestgreen 2px;
 }
 
 /*info alkaa*/
@@ -372,7 +394,7 @@ footer img {
     }
 
     #main-bottom h3 {
-        padding-top: 10px;
+        padding: 10px 0 0 10px;
         font-size: 20px;
     }
     #main-bottom tr {
@@ -383,12 +405,23 @@ footer img {
     #ticket-price img {
         display: block;
         margin-left: auto;
-        margin-right: auto;    
+        margin-right: auto;
+        width: 95%;   
+        padding: 15px 0 0; 
     }
     #info img {
+        width: 95%;   
+        padding: 15px 0 0; 
         display: block;
         margin-left: auto;
         margin-right: auto;    
+    }
+
+    .prices { 
+        margin-bottom: 15px;
+    }
+    .prices td{
+        font-size: 12px;
     }
 }
 
@@ -403,7 +436,7 @@ footer img {
     }
     #main-bottom h3 {
         font-size: 25px;
-        padding: 0 0 10px;
+        padding: 0 10px 10px;
         margin: 0;
     }
 
@@ -421,13 +454,13 @@ footer img {
     #ticket-price img {
         width: 45%;    
         float: right;
-        padding: 25px 0;
+        padding: 25px;
         margin-left: 25px;
     }
     #info img {
         width: 45%;    
         float: left;
-        padding: 25px 0; 
+        padding: 25px 0 0 25px; 
         margin-right: 25px;  
     }
     #ticket-price {
