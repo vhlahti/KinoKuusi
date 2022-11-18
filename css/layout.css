@@ -5,6 +5,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-top: 80px;
     background-image: url(../images/kinokuusi-bg.jpg);
+    background-size : 100% auto;
     background-color: rgb(17, 70, 17);
 }
 
@@ -49,7 +50,8 @@ header {
 }
 .logo {
     display: block;
-    width: 50%;
+    width: 25%;
+    padding: 1rem;
 }
 .logo img {
     width: 100%;
@@ -58,7 +60,7 @@ header {
     color: #f6e7ca;
     text-decoration: none;
     position: absolute;
-    top: 2.7rem;
+    top: 2rem;
     right: 2rem;
 }
 
