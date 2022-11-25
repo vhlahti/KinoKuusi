@@ -216,17 +216,18 @@ img {
 .summary {
     padding: 0 1rem 0 1rem
 }
+.summary p {
+    margin-block-end: 1rem;
+}
 .movieName {
     font-size: 1.6rem;
     margin-block-end: 1rem;
     font-weight: bold;
 }
 .movieInfo{
-    margin: 2rem 0 1rem 1rem;
+    margin: 2rem 0;
 }
-td {
-    padding: 0 1rem 0 1rem;
-}
+
 .reservation {
     text-align: center;
     
@@ -240,7 +241,7 @@ td {
     padding: 0.5rem;
     line-height: 1.8rem;
 }
-.tickets {
+.btn-reserve {
     background-color: #006600;
     color: #f6e7ca;
     font-weight: bold;
@@ -387,6 +388,34 @@ footer img {
 
    /* header/navigointi tablet/desktop säännöt loppuu */
 
+   /* ohjelmiston table säännöt alkaa */
+   .poster {
+    flex-grow: 0.5;
+    }
+
+    .summary p{
+        font-size: 1.3rem;
+    }
+    .movieName {
+        font-size: 2rem;
+    }
+    
+    .reservation p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .showtime {
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 3rem;
+    }
+    .btn-reserve {
+        font-size: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    /* ohjelmisto loppuu */
+
    /*liput ja hinnat alkaa*/
     
     #main-bottom p {
@@ -429,6 +458,17 @@ footer img {
 
 /* Desktop-näkymän css-säännöt. */
 @media only screen and (min-width: 769px) {
+
+    /* ohjelmisto alkaa */
+    .summary p {
+        font-size: 1.5rem;
+    }
+    .movieInfo{
+        margin: 2rem 0;
+        font-size: 1.3rem;
+    }
+
+    /* ohjelmisto loppuu */
     
     /*liput ja hinnat alkaa*/
     #main-bottom {
