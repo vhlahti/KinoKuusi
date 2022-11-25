@@ -364,6 +364,14 @@ footer img {
     color: #f6e7ca
 }
 
+/* Varausjärjestelmä collapse säännöt alkaa */
+
+#varaus1 {
+    margin: 0.5rem;
+}
+
+/* Varausjärjestelmä collapse säännöt loppuu */
+
 /* Tablet-näkymän css-säännöt. */
 @media only screen and (min-width: 426px) {
 
