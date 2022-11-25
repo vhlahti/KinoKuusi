@@ -56,14 +56,13 @@ header {
 .logo img {
     width: 100%;
 }
-.toggle-button {
+.toggle-button, .toggle-button:visited {
     color: #f6e7ca;
     text-decoration: none;
     position: absolute;
     top: 2.3rem;
     right: 2rem;
 }
-
 .anchor {
     display: block;
     position: relative;  
