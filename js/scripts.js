@@ -1,11 +1,17 @@
-const toggleButton = document.getElementsByClassName("toggle-button")[0];
-const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+// Navigation toggle animation
 
-toggleButton.addEventListener("click", popMenu);
+const toggleButton = document.querySelector(".toggle-button");
+const navbarLinks = document.querySelector(".navbar-links");
 
-function popMenu() {
-    navbarLinks.classList.toggle("active");
-}
+toggleButton.addEventListener("click", () => {
+  toggleButton.classList.toggle("active");
+  navbarLinks.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+  toggleButton.classList.remove("active");
+  navbarLinks.classList.remove("active");
+}))
 
 //Adding a timer to change the images automatically
 var counter = 1;
