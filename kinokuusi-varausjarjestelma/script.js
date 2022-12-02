@@ -71,3 +71,14 @@ function doSomething(){
     const thanks = document.getElementById('btn-varaa');
     thanks.classList.add('color');
 }
+
+//peruutusnappi joka poistaa valitut paikat
+function peruuta() {
+    const selectedSeats = document.querySelectorAll(".row .seat.selected");
+        if (confirm("Haluatko varmasti perua valitut paikat?") === true) {
+            for (let i = 0; i < selectedSeats.length; i++) {
+                selectedSeats[i].classList.remove('selected');
+        }
+    }
+    updateSelectedCount();
+}
