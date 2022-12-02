@@ -106,7 +106,6 @@ body{
 .movie-container {
     margin: 20px 0;
 }
-
 .movie-container select {
     background-color: #fff;
     border: 0;
@@ -136,7 +135,6 @@ body{
 .showcase small {
     margin-left: 0.5rem;
 }
-
 .p.text{
     font-size: 1rem;
     margin: 5px 0;
@@ -144,24 +142,14 @@ body{
 .p-text span{
     color: green;
 }
-
 #btn-varaa, #btn-osta, #btn-kumoa {
     background-color: gold;
     border-radius: 5px;
     padding: 10px;
     margin: 5px;
+    cursor: pointer;
 }
-/*#btn-osta, #btn-kumoa {
-    background-color: gold;
-    border-radius: 5px;
-    padding: 10px 13px;
-    margin: 10px;
-}*/
 
-.color {
-    color: green;
-    font-weight: bold;
-}
 
 
 @media only screen and (min-width: 426px) {

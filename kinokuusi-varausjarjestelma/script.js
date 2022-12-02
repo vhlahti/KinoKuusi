@@ -65,12 +65,7 @@ container.addEventListener("click", (e) => {
 })
 
 
-//varausnappi teksti vaihtaa väriä (testi et script tekee jotain)
 
-function doSomething(){
-    const thanks = document.getElementById('btn-varaa');
-    thanks.classList.add('color');
-}
 
 //peruutusnappi joka poistaa valitut paikat
 function peruuta() {
