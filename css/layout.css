@@ -545,7 +545,7 @@ iframe {
     #info img {
         width: 45%;    
         float: left;
-        padding: 25px 0 0 25px; 
+        padding: 25px; 
         margin-right: 25px;  
     }
     #ticket-price {
