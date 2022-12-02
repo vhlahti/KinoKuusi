@@ -63,12 +63,21 @@ header {
     top: 2.3rem;
     right: 2rem;
 }
-.anchor {
+.anchor-navi-muut, .anchor-navi-ohjelmisto, .anchor-varaus {
     display: block;
     position: relative;  
-    top: -80px;
     visibility: hidden;
 }
+.anchor-navi-ohjelmisto {
+    top: -70px;
+}
+.anchor-navi-muut {
+    top: -65px;
+}
+.anchor-varaus {
+    top: -100px;
+}
+
 
 /* header/navigointi mobiili säännöt loppuu */
 
@@ -376,7 +385,7 @@ footer img {
 }
 iframe {
     width: 100%;
-    height: 40rem;
+    height: 50rem;
     padding: 0;
 }
 
@@ -471,6 +480,23 @@ iframe {
     .prices td{
         font-size: 12px;
     }
+
+    /*liput ja hinnat loppuu*/
+
+    /*linkkien anchor sääntö alkaa*/
+
+    .anchor-navi-ohjelmisto {
+        top: -100px;
+    }
+    .anchor-navi-muut {
+        top: -90px;
+    }
+    .anchor-varaus {
+        top: -170px;
+    }
+
+    /*linkkien anchor sääntö loppuu*/
+
 }
 
 /* Desktop-näkymän css-säännöt. */
@@ -537,6 +563,22 @@ iframe {
         background: none #20591f;
         padding: 50px 0;
     }
+
+    /*liput ja hinnat loppuu*/
+
+    /*linkkien anchor sääntö alkaa*/
+
+    .anchor-navi-ohjelmisto {
+        top: -140px;
+    }
+    .anchor-navi-muut {
+        top: -135px;
+    }
+    .anchor-varaus {
+        top: -170px;
+    }
+
+    /*linkkien anchor sääntö loppuu*/
   
 }
 
