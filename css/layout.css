@@ -442,6 +442,12 @@ iframe {
 
     /* ohjelmisto loppuu */
 
+    iframe {
+        width: 100%;
+        height: 35rem;
+        padding: 0;
+    }
+
    /*liput ja hinnat alkaa*/
     
     #main-bottom p {
@@ -512,6 +518,12 @@ iframe {
     }
 
     /* ohjelmisto loppuu */
+
+    iframe {
+        width: 100%;
+        height: 40rem;
+        padding: 0;
+    }
     
     /*liput ja hinnat alkaa*/
     #main-bottom {

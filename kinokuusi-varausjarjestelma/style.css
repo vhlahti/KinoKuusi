@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+/*@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');*/
+html {
+    font-size: 62.5%;
+}
 
 * {
     box-sizing: border-box;
@@ -10,10 +13,10 @@ body{
     display: flex;
     flex-direction: column;
 /*   align-items: center;
-    justify-content: center;*/
-    height: 100vh;
+    justify-content: center;
+    height: 100vh;*/
     padding: 0.5rem;
-    font-family: 'Lato', 'sans-serif';
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .flex {
@@ -88,10 +91,13 @@ body{
     background-color: yellow;
 }
 
-.showcase .seat:not(.sold):hover{
+/*.showcase .seat:not(.sold):hover{
     cursor: default;
     transform: scale(1);
-}
+}*/
+.donthover {
+    pointer-events: none;
+  }
 
 .varausInfo {
     text-align: center;
@@ -104,13 +110,13 @@ body{
 }
 
 .movie-container {
-    margin: 20px 0;
+    margin: 1rem 0;
 }
 .movie-container select {
     background-color: #fff;
     border: 0;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 1.3rem;
     margin-left: 10px;
     padding:  5px 15px 5px 15px;
     -moz-appearance: none;
@@ -148,6 +154,7 @@ body{
     padding: 10px;
     margin: 5px;
     cursor: pointer;
+    font-size: 1.3rem;
 }
 
 
@@ -163,7 +170,8 @@ body{
     }
     .varausInfo {
         padding: 1rem;
-        margin-top: -2rem;
+        margin-inline-start: 2rem;
+        margin-top: 2rem;
         order: 2;
     }
     .container {
@@ -194,14 +202,10 @@ body{
     }
 
     .seat {
-        background-color: green;
         height: 40px;
         width: 45px;
         margin: 0 auto;
-        font-size: 50px;
-        border: solid 1px #242333;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
+       
     }
 
 
