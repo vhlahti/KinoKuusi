@@ -70,14 +70,21 @@ container.addEventListener("click", (e) => {
 //peruutusnappi joka poistaa valitut paikat
 function peruuta() {
     const selectedSeats = document.querySelectorAll(".row .seat.selected");
-        if (confirm("Haluatko varmasti perua valitut paikat?") === true) {
+    
+    let seats = 0;
+    for (let i = 0; i < selectedSeats.length; i++) {
+        seats++;
+    }
+
+    if (seats > 0 && confirm("Haluatko varmasti perua valitut paikat?") === true) {
             for (let i = 0; i < selectedSeats.length; i++) {
                 selectedSeats[i].classList.remove('selected');
-        }
+            }
     }
     updateSelectedCount();
 }
-// estää siirtymästä eteenpäin ilman valittuja paikkoja
+
+// estää siirtymästä eteenpäin ilman valittuja paikkoja ja jos valittu paikat niin siirtyy eteenpäin
 function varaa() {
     const selectedSeats = document.querySelectorAll(".row .seat.selected");
             const notChosenSeats = document.querySelector('.notChosenSeats');
