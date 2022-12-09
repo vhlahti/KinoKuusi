@@ -105,6 +105,10 @@ body{
     order: 1;
 }
 
+.notChosenSeats {
+    color: red;
+}
+
 .nappulat {
     margin: 0 auto;
 }
