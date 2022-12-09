@@ -95,6 +95,14 @@ header {
     width: 100%!important;
     border-radius: 1rem;
 }
+
+#carouselHeader {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 0 1rem 2rem;
+    color: #f6e7ca;
+    text-shadow: 3px 3px 5px #000000;
+}
 /*image slider säännöt loppuu*/
 
 
