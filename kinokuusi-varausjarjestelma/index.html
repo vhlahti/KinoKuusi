@@ -103,10 +103,10 @@
             <label>Valitse lippusi: </label>
             <select id="movie">
                 <option disabled>Hintaryhmät</option>
-                <option selected value="10">Aikuinen (10€)</option>
+                <option selected value="5">Aikuinen (5€)</option>
                 <option value="5">Lapsi (5€)</option>
                 <option value="5">Muu alennusryhmä (5€)</option>
-                <option value="0">Käytä sarjalippua</option>
+                <option value="5">Käytä sarjalippua</option>
             </select>
         </article>
 
@@ -130,9 +130,10 @@
         <p class="text">
             Olet valinnut <span id="count">0</span> paikkaa ja niiden yhteishinta on <span id="total">0</span> €.
         </p>
+        <p class="notChosenSeats"></p>
         <div class="nappulat">
-        <a href="./nextstep/varaus.html"><button id="btn-varaa" >Varaa paikat</button></a> 
-        <a href="./nextstep/osta.html"><button id="btn-osta" >Osta paikat</button></a>
+        <button id="btn-varaa" onclick="varaa()">Varaa paikat</button>
+        <button id="btn-osta" onclick="osta()">Osta paikat</button>
         <button id="btn-kumoa" onclick="peruuta()">Peruuta</button>
         </div>
     </section>
