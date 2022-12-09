@@ -14,16 +14,16 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
 }))
 
 //Adding a timer to change the images automatically
-var counter = 1;
-    setInterval(function()  {
-      document.getElementById('radio'+ counter).checked = true;
-      counter++; 
-
-      if(counter>4){  //4 means it slides through all the 4 pictures
-        counter=1
-      }
-
-    }, 5000);
+//var counter = 1;
+//    setInterval(function()  {
+//      document.getElementById('radio'+ counter).checked = true;
+//      counter++; 
+//
+//      if(counter>4){  //4 means it slides through all the 4 pictures
+//        counter=1
+//      }
+//
+//    }, 5000);
 
 //What week is it
 currentDate = new Date();
