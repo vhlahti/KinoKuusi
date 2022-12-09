@@ -77,7 +77,7 @@ function peruuta() {
     }
     updateSelectedCount();
 }
-
+// estää siirtymästä eteenpäin ilman valittuja paikkoja
 function varaa() {
     const selectedSeats = document.querySelectorAll(".row .seat.selected");
             const notChosenSeats = document.querySelector('.notChosenSeats');
