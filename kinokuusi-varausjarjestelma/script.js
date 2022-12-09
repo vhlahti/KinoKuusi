@@ -88,3 +88,15 @@ function varaa() {
             } 
     }
 }
+
+function osta() {
+    const selectedSeats = document.querySelectorAll(".row .seat.selected");
+            const notChosenSeats = document.querySelector('.notChosenSeats');
+            notChosenSeats.innerHTML = 'Et ole valinnut yhtään paikkaa!';
+        for (let i = 1; i < selectedSeats.length + 1; i++) {
+            if (i > 0) {
+                window.location.replace("./nextstep/osta.html");
+            } 
+    }
+}
+

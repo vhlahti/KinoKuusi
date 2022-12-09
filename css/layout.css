@@ -238,7 +238,7 @@ img {
 
 .reservation {
     text-align: center;
-    
+    width: 30%;    
 }
 .reservation p {
     line-height: 1.5rem;
@@ -258,6 +258,8 @@ img {
     border-radius: 0.5rem;
 }
 /* Program sectionin CSS säännöt loppuu tähän */
+/*Seat booking alkaa*/
+
 
 /*liput ja hinnat alkaa*/
 
@@ -524,6 +526,7 @@ iframe {
         height: 40rem;
         padding: 0;
     }
+    
     
     /*liput ja hinnat alkaa*/
     #main-bottom {
