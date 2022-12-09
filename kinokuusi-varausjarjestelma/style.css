@@ -152,13 +152,17 @@ body{
 .p-text span{
     color: green;
 }
-#btn-varaa, #btn-osta, #btn-kumoa {
+#btn-varaa, #btn-osta, #btn-kumoa, #btn-sulje {
     background-color: gold;
     border-radius: 5px;
     padding: 10px;
     margin: 5px;
     cursor: pointer;
     font-size: 1.3rem;
+}
+#btn-sulje {
+    color: white;
+    background-color: red;
 }
 
 
