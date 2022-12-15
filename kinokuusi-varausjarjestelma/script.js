@@ -36,6 +36,7 @@ function updateSelectedCount() {
 
     } else {
         alert("Valitse ensin lippusi");
+        window.location.reload();
     }
 }
 
