@@ -4,6 +4,10 @@ const count = document.getElementById("count");
 const total = document.getElementById("total");
 const movieSelect = document.getElementById("movie");
 
+if(localStorage != null) {
+    localStorage.clear();
+}
+
 populateUI()
 
 let ticketPrice = +movieSelect.nodeValue;
@@ -13,7 +17,8 @@ function setMovieData(movieIndex, moviePrice) {
     localStorage.setItem("selectedmoviePrice", moviePrice);
 }
 
-function updateSelectedCount(){
+function updateSelectedCount() { 
+    if (movieSelect.value != 0) {
     const selectedSeats = document.querySelectorAll(".row .seat.selected");
 
     const seatsIndex = [...selectedSeats].map(seat => [...seats].indexOf(seat));
@@ -26,6 +31,12 @@ function updateSelectedCount(){
     total.innerText = selectedSeatsCount * ticketPrice;
 
     setMovieData(movieSelect.selectedIndex, movieSelect.value);
+
+    document.getElementById("movie").options[1].disabled = true;
+
+    } else {
+        alert("Valitse ensin lippusi");
+    }
 }
 
 function populateUI() {
@@ -82,6 +93,7 @@ function peruuta() {
             }
     }
     updateSelectedCount();
+    
 }
 
 // estää siirtymästä eteenpäin ilman valittuja paikkoja ja jos valittu paikat niin siirtyy eteenpäin

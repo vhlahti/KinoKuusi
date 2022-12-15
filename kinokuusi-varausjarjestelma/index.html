@@ -103,7 +103,8 @@
             <label>Valitse lippusi: </label>
             <select id="movie">
                 <option disabled>Hintaryhmät</option>
-                <option selected value="5">Aikuinen (5€)</option>
+                <option value="0" selected="selected">Valitse lippu</option>
+                <option value="5">Aikuinen (5€)</option>
                 <option value="5">Lapsi (5€)</option>
                 <option value="5">Muu alennusryhmä (5€)</option>
                 <option value="5">Käytä sarjalippua</option>
@@ -135,7 +136,7 @@
         <button id="btn-varaa" onclick="varaa()">Varaa paikat</button>
         <button id="btn-osta" onclick="osta()">Osta paikat</button>
         <button id="btn-kumoa" onclick="peruuta()">Peruuta</button>
-        <button id="btn-sulje" onClick="window.parent.location.reload();">Sulje</button>
+        <button id="btn-sulje" onClick="localStorage.clear(); window.parent.location.reload();">Sulje</button>
         </div>
         
     </section>
