@@ -32,7 +32,7 @@ function updateSelectedCount() {
 
     setMovieData(movieSelect.selectedIndex, movieSelect.value);
 
-    document.getElementById("movie").options[1].disabled = true;
+    document.getElementById("movie").options[0].disabled = true;
 
     } else {
         alert("Valitse ensin lippusi");
@@ -107,6 +107,7 @@ function varaa() {
             } 
     }
 }
+
 
 function osta() {
     const selectedSeats = document.querySelectorAll(".row .seat.selected");
