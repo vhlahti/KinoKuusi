@@ -35,7 +35,7 @@ function updateSelectedCount() {
     document.getElementById("movie").options[0].disabled = true;
 
     } else {
-        alert("Valitse ensin lippusi");
+        alert("Valitse ensin lipputyyppi");
         window.location.reload();
     }
 }
@@ -81,6 +81,7 @@ container.addEventListener("click", (e) => {
 
 //peruutusnappi joka poistaa valitut paikat
 function peruuta() {
+    if (movieSelect.value != 0) {
     const selectedSeats = document.querySelectorAll(".row .seat.selected");
     
     let seats = 0;
@@ -93,31 +94,33 @@ function peruuta() {
                 selectedSeats[i].classList.remove('selected');
             }
     }
+    window.location.reload();
     updateSelectedCount();
-    
+}
 }
 
 // estää siirtymästä eteenpäin ilman valittuja paikkoja ja jos valittu paikat niin siirtyy eteenpäin
 function varaa() {
     const selectedSeats = document.querySelectorAll(".row .seat.selected");
-            const notChosenSeats = document.querySelector('.notChosenSeats');
-            notChosenSeats.innerHTML = 'Et ole valinnut yhtään paikkaa!';
-        for (let i = 1; i < selectedSeats.length + 1; i++) {
-            if (i > 0) {
-                window.location.replace("./nextstep/varaus.html");
-            } 
+    const selectedSeatsCount = selectedSeats.length;
+    
+    if (selectedSeatsCount > 0) {
+        window.location.replace("./nextstep/varaus.html");
+    } else {
+        alert('Valitse paikat ja lipputyyppi!')
     }
 }
 
 
 function osta() {
     const selectedSeats = document.querySelectorAll(".row .seat.selected");
-            const notChosenSeats = document.querySelector('.notChosenSeats');
-            notChosenSeats.innerHTML = 'Et ole valinnut yhtään paikkaa!';
-        for (let i = 1; i < selectedSeats.length + 1; i++) {
-            if (i > 0) {
-                window.location.replace("./nextstep/osta.html");
-            } 
+    const selectedSeatsCount = selectedSeats.length;
+    let i = 0;
+
+    if (selectedSeatsCount > 0) {
+        window.location.replace("./nextstep/osta.html");
+    } else {
+        alert('Valitse paikat ja lipputyyppi!')
     }
 }
 
