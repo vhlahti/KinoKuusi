@@ -1,0 +1,220 @@
+/*@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');*/
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #242333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+/*   align-items: center;
+    justify-content: center;
+    height: 100vh;*/
+    padding: 0.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+.flex > * {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+
+.salikartta {
+    perspective: 1000px;
+    margin-bottom: 30px;
+    order: 2;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+}
+.screen{
+    background-color: #fff;
+    height: 1rem;
+    margin: 0.5rem 0;
+    width: 100%;
+    transform: rotateX(45deg);
+    box-shadow: 0 5px 10px rgba(255,255,255,0.7);
+}
+#valkokangas{
+    text-align: center;
+}
+
+.row{
+    margin-top: 7px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+.row.first {
+    margin-bottom: 2rem;
+}
+
+.seat {
+    background-color: green;
+    height: 25px;
+    width: 30px;
+    margin: 0 auto;
+    font-size: 50px;
+    border: solid 1.5px #242333;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.seat.selected {
+    background-color: gold;
+}
+
+.seat.sold {
+    background-color: rgb(65, 51, 51);
+}
+
+/*.seat:nth-of-type(2){
+    margin-right:18px;
+}
+
+.seat:nth-last-of-type(2){
+    margin-left: 18px;
+}*/
+
+.seat:not(.sold):hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    background-color: yellow;
+}
+
+/*.showcase .seat:not(.sold):hover{
+    cursor: default;
+    transform: scale(1);
+}*/
+.donthover {
+    pointer-events: none;
+  }
+
+.varausInfo {
+    text-align: center;
+    margin: 1rem auto;
+    order: 1;
+}
+
+.notChosenSeats {
+    color: red;
+}
+
+.nappulat {
+    margin: 0 auto;
+}
+
+.movie-container {
+    margin: 1rem 0;
+}
+.movie-container select {
+    background-color: #fff;
+    border: 0;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    margin-left: 10px;
+    padding:  5px 15px 5px 15px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.showcase{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 5px 10px;
+    color: #fff;
+    list-style-type: none;
+    display: flex;
+}
+.showcase li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.showcase small {
+    margin-left: 0.5rem;
+}
+.p.text{
+    font-size: 1rem;
+    margin: 5px 0;
+}
+.p-text span{
+    color: green;
+}
+#btn-varaa, #btn-osta, #btn-kumoa, #btn-sulje {
+    background-color: gold;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+#btn-sulje {
+    color: white;
+    background-color: red;
+}
+
+
+
+@media only screen and (min-width: 426px) {
+    
+    body{
+        padding: 1.5rem;
+    }
+
+    .flex {
+        flex-direction: row;
+    }
+    .varausInfo {
+        padding: 1rem;
+        margin-inline-start: 2rem;
+        margin-top: 2rem;
+        order: 2;
+    }
+    .container {
+        order: 1;
+    }
+
+    .seat {
+        background-color: green;
+        height: 30px;
+        width: 35px;
+        margin: 0 auto;
+        font-size: 50px;
+        border: solid 1.5px #242333;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+
+
+}
+
+
+@media only screen and (min-width: 769px) {
+
+    .salikartta {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .seat {
+        height: 40px;
+        width: 45px;
+        margin: 0 auto;
+       
+    }
+
+
+}

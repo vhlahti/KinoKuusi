@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>varausjärjestelmä</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <!-- <main class="movie-container">
+        <label>Valitse elokuva:</label>
+        <select id="movie">
+            <option value="0">Ohjelmistossa</option>
+            <option value="17">Avangers: Endgame (17€)</option>
+            <option value="12">Joker (12€)</option>
+            <option value="8">Toy Story 4 (8€)</option>
+            <option value="9">The Lion King (9€)</option>
+        </select>
+    </main>-->
+
+    <main class="flex">
+    <section class="salikartta">
+        <div class="row">    
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat sold"></div>
+            <div class="seat sold"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat sold"></div>
+            <div class="seat sold"></div>
+            <div class="seat sold"></div>
+            <div class="seat"></div>
+        </div>
+
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat sold"></div>
+            <div class="seat sold"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat sold"></div>
+            <div class="seat sold"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat sold"></div>
+            <div class="seat sold"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+
+        <div class="row first">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat sold"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat sold"></div>
+            <div class="seat sold"></div>
+        </div>
+        
+        <div class="screen"></div>
+        <span id="valkokangas">Valkokangas</span>        
+        
+    </section>
+
+    <section class="varausInfo">
+        <article class="movie-container">
+            <select id="movie">
+                <option value="0" selected="selected">Valitse lippusi</option>
+                <option value="5">Aikuinen (5€)</option>
+                <option value="5">Lapsi (5€)</option>
+                <option value="5">Muu alennusryhmä (5€)</option>
+                <option value="5">Käytä sarjalippua</option>
+            </select>
+        </article>
+
+
+        <ul class="showcase">
+            <li>
+                <div class="seat donthover"></div>
+                <small>Vapaana</small>
+            </li>
+            <li>
+                <div class="seat selected donthover"></div>
+                <small>Sinulle valittuna</small>
+            </li>
+            <li>
+                <div class="seat sold donthover"></div>
+                <small>Varattu</small>
+            </li>
+        </ul>
+
+        <br>
+        <p class="text">
+            Olet valinnut <span id="count">0</span> paikkaa ja niiden yhteishinta on <span id="total">0</span> €.
+        </p>
+        <p class="notChosenSeats"></p>
+        <div class="nappulat">
+        <button id="btn-varaa" onclick="varaa()">Varaa paikat</button>
+        <button id="btn-osta" onclick="osta()">Osta paikat</button>
+        <button id="btn-kumoa" onclick="peruuta()">Peruuta</button>
+        <button id="btn-sulje" onClick="localStorage.clear(); window.parent.location.reload();">Sulje</button>
+        </div>
+        
+    </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
